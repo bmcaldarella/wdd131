@@ -1,0 +1,220 @@
+:root{
+  --title:"Bebas Neue", sans-serif;
+  --description: "Montserrat", sans-serif;
+  --special: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#product-detail{
+display: grid;
+grid-template-columns: auto 1fr auto/auto;
+
+}
+
+header{
+  grid-column: 1/5;
+  grid-row: 1/1;
+
+}
+
+
+.product-details-container {
+  width: 98%;
+  margin: 0px auto;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  align-items: flex-start; 
+  font-family: var(--title);
+}
+
+.image-container {
+  width: 100%;
+  max-width: 1200px; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  flex-wrap:nowrap;
+  overflow-x: auto; 
+  gap: 10px;
+  margin-bottom: 40px; 
+  
+}
+
+.image-container img {
+  max-width: 100%; 
+  height: auto; 
+  max-height: 300px;
+  object-fit: cover; 
+  border-radius: 8px; 
+}
+
+
+.product-details-price {
+  position: absolute;
+  font-size: 20px;
+  margin-top: 310px;
+  text-align: center; 
+  font-family: var(--title);
+}
+
+
+button {
+  position:absolute;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #bc1a1a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block; 
+  margin: 350px auto; 
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.footer-products-detail{
+  grid-row: 4; 
+  grid-column: 1/5; 
+  padding: 115px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  font-family: var(--description);
+  margin-top: rem;
+}
+
+
+
+header{
+  grid-column: 1/4;
+  grid-row: 1/1;
+  width: 100%;
+  position: fixed;
+  z-index:999;
+
+
+}
+#menu-product-detail {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: fixed;
+    bottom: 22rem;
+    left:  1.3rem; 
+   
+   
+    
+}
+
+#menu-product-detail::before {
+    content: "☰";
+    cursor: pointer;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    
+}
+
+#menu-product-detail.open::before {
+    content: "X";
+    
+}
+.navigation {
+flex-direction: row;
+flex-wrap: wrap;
+margin-top: 3.5rem;
+text-align: center;
+
+
+
+}
+ a{
+ display: none;
+ text-decoration: none;
+ text-align: center;
+ color: rgb(2, 2, 2);
+ margin: 20px;
+ font-weight:900 ;
+ font-size: 24px;
+ 
+ 
+}
+
+.navigation a:hover{
+  
+ background-color: rgba(124, 124, 124, 0.118);
+
+
+
+
+  
+  
+}
+.open a {
+    display: block;
+  
+    
+}
+
+.trolley-shop{
+margin-left: 130px;
+
+}
+
+.logo{
+  width: 190px;
+  height: 190px;
+  margin-top: 1rem;
+}
+
+
+small{
+  font-size: 70px;
+ 
+}
+@media (min-width: 50.5rem) {
+
+  header{
+      grid-column: 1/4;
+      grid-row: 1/1;
+      width: 100%;
+      position: relative;
+    }
+
+      .navigation {
+     
+      flex-direction: row;
+      flex-wrap: wrap;
+      
+      }
+      a{
+       display: inline-flex;
+       text-decoration: none;
+       text-align: center;
+       color: black;
+       margin-top: 40px;
+       font-family: "Bebas Neue", sans-serif;
+       font-size: 50px;
+       
+      }
+      
+                 
+         #menu-product-detail {
+          display: none;
+         }
+       
+      .navigation.hidden {
+          top: -100px; 
+      }
+
+      .trolley-shop{
+        margin-left: 130px;
+        margin-top: -50px;
+        
+        }
+        
+}

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --title: "Bebas Neue", sans-serif;
+    --description: "Montserrat", sans-serif;
+    --special: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.full-container {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    gap: 30px;
+
+}
+.title-product{
+    font-family: var(--title);
+    text-align: center;
+    font-size: 50px;
+}
+.product {
+    height: 600px;
+    padding: 30px;
+    border: 1px solid #c3b7b72e;
+    border-radius: 5px;
+    background-color: #c3b7b716;
+    box-shadow: 0 2px 4px rgba(142, 38, 38, 0.1);
+}
+
+.product:hover {
+    cursor: pointer;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.24);
+}
+
+.product h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.product p {
+    margin-bottom:10px;
+}
+
+.product img {
+    width: 100%;
+    height: 250px; 
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.price {
+    text-align: center;
+    font-family: var(--title);
+    font-size: 20px;
+    margin-top: 30px;
+}
+.productName{
+   
+    font-size: 14px;
+    font-family: var(--special);
+    text-align: center;
+}
+
+.buy-button{
+    background-color: rgb(10, 4, 1);
+    padding: 3px;
+    color: white;
+    border-radius: 4px;
+    border: 1 px solid rgba(0, 0, 0, 0.116);
+    border-color: #dddddd10;
+    width: 100px;
+    margin-bottom: 34rem;
+    cursor: pointer;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.135);
+}
+@media (min-width: 50.5rem) {
+
+    .containers-products {
+        margin-top: 8rem;
+        height:58vh; 
+        overflow-y: scroll; 
+        border: 1px solid #ddd;}
+    
+}

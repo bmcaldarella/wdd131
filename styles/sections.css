@@ -1,0 +1,317 @@
+.sections {
+  width:31.5rem;
+  margin: 0 auto;
+  margin-top: 3.5rem;
+  overflow: hidden;
+  background-color:#F5F5F5;
+}
+
+.section-pictures {
+  display: inline-flex;
+  width: auto;
+}
+
+  
+.trolley {
+  width: 35px;
+  position: absolute; 
+  top: 15px; 
+  right: 20px; 
+  cursor: pointer;
+  
+}
+
+
+
+
+.img-sections {
+  width: 250px;
+  height: 250px;
+  flex-grow: 1;
+  object-fit: cover;
+  transition: width 0.7s ease, height 0.7s ease, opacity 0.15s ease, filter 0.15s ease;
+  position: relative;
+}
+
+.img-sections:hover {
+  cursor: pointer;
+  width: 500px;
+  height: 250px;
+  
+  opacity: 0.8;
+
+
+}
+
+.img3 {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  transition: width 0.7s ease, height 0.7s ease, opacity 0.15s ease, filter 0.15s ease;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+
+}
+
+.img3:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  filter: contrast(120%);
+}
+
+.img-picture {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+ 
+}
+
+.img-picures2{
+  margin-top: -30px;
+}
+.sections h1 {
+  text-align: center;
+  padding: 2.5rem;
+  font-family:var(--special);
+  font-size: 40px;
+}
+.product-category1,
+.product-category2,
+.product-category3,
+.product-category4
+{
+  color: #f8f8f8;
+  font-size: 30px;
+  font-family:var(--special);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  
+}
+
+.product-category1{
+  position: absolute;
+  bottom: 7rem;
+  left: 5rem; 
+  padding: 5px 10px; 
+  border-radius: 5px; 
+}
+
+
+.product-category2{
+  position: absolute;
+  bottom:7rem; 
+  left: 20rem; 
+  padding: 2px 10px; 
+  border-radius: 5px; 
+  width: auto;
+
+}
+
+
+.product-category3{
+  position: absolute;
+  top: 7rem;
+  left: 4rem; 
+  padding: 2px 10px; 
+  border-radius: 5px;
+  width: auto;
+
+ 
+}
+
+.product-category4{
+  position: absolute;
+  top: 7rem;
+  left: 19rem;
+  padding: 2px 10px;
+  border-radius: 5px; 
+  width: auto;
+
+}
+
+.product-category5{
+  color: #f8f8f8;
+  font-size: 30px;
+  font-family:var(--special);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  
+  position: relative;
+  text-align: center;
+ 
+  bottom: 200px;
+}
+
+
+/*best seller*/
+
+.best-seller h2{
+  text-align: center;
+  font-size: 40px;
+  font-family:var(--title);
+  margin-top: 3rem;
+  padding: 50px;
+
+}
+
+
+
+
+
+.best-seller {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 7.5rem;
+  background-color: #F5F5F5;
+ 
+
+  
+}
+
+.product-container {
+
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product {
+  width: 210px;
+  margin: 1rem;
+  border: 1px solid #1a1a1a12;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  background-image: none;
+}
+
+.product:hover{
+  box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.082);
+  cursor: pointer;
+}
+
+
+
+
+.seller-container{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+width: 100%;
+
+
+
+}
+
+
+.product-description{
+  text-align: center;
+  padding: 1px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.product-price{
+  margin: 5px;
+  font-family: var(--title);
+}
+
+
+
+.trolley{
+  margin-left: 130px;
+  
+  
+  }
+  
+  
+@media (min-width: 50.5rem) {
+
+  .menu{
+    display: none;
+  }
+
+  .sections{
+   
+    width: 70%;
+   
+
+  }
+  .product-category2{
+    position: absolute;
+    bottom:7rem; 
+    left: 65rem; 
+    padding: 2px 10px; 
+    border-radius: 5px; 
+    width: auto;
+    overflow: hidden;
+  
+  }
+  .product-category4{
+    position: absolute;
+    top: 7rem;
+    left: 50rem;
+    padding: 2px 10px;
+    border-radius: 5px; 
+    width: auto;
+    overflow: hidden;
+  
+  }
+  
+  
+  
+.product-container {
+
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product {
+  width: 310px;
+  margin: 1rem;
+  border: 1px solid #1a1a1a12;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  background-image: none;
+}
+
+.product:hover{
+  box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.082);
+  cursor: pointer;
+}
+
+
+
+
+.seller-container{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+width: 100%;
+
+
+
+}
+
+
+.product-description{
+  text-align: center;
+  padding: 1px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.product-price{
+  margin: 5px;
+  font-family: var(--title);
+}
+
+
+}

@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+   
+}
+.banner{
+  
+  margin-top: 2.3rem;
+}
+.banner-img{
+    width: 100%;
+    height: 100%;
+   
+   
+}
+
+.logo{
+    width:250px;
+    height: 250px;
+    z-index: 1;
+    position: relative;
+    bottom: 7rem;
+    right: 0.7rem;
+    float: left;
+    
+
+
+}
+
+
+@media (min-width: 50.5rem) {
+    body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner {
+        width: 100%;
+        overflow: hidden;
+        margin: 0 auto;
+       
+    }
+
+    .content {
+       
+       
+        text-align: center; 
+        object-fit: cover;
+        width: 100%;
+        height: 80%;
+        z-index: 999;
+
+    }
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="W06 Assignment: Shop - WDD 131 Dynamic Web Fundamentals">
+  <meta name="author" content="Brandon Caldarella">
+  <title>Document</title>
+  <link rel="stylesheet" href="/wdd131/styles/home.css">
+  <link rel="stylesheet" href="/wdd131/styles/nav.css">
+  <link rel="stylesheet" href="/wdd131/styles/index.css">
+  <link rel="stylesheet" href="/wdd131/styles/banner.css">
+  <link rel="stylesheet" href="/wdd131/styles/sections.css">
+  <link rel="stylesheet" href="/wdd131/styles/allProducts.css">
+</head>
+<body>
+  <header>
+    <button class="menu"></button>
+    <nav class="navigation">
+      <a href="#home" title="Home">HOME</a>
+      <a href="#categories-section" title="old">CATEGORIES</a>
+      <a href="/wdd131/project/allProducts.html" title="new">SEE ALL</a>
+      <a href="#best-seller">BEST SELLER</a>
+      <div class="number">
+        <div class="trolley">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+          </svg>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="banner">
+      <div class="content">
+        <picture class="banner-img banner-img1">
+          <source srcset="/wdd131/images-shop/img-ecommers/banner2.jpeg" media="(min-width: 956px)">
+          <source srcset="/wdd131/images-shop/img-ecommers/banner6.jpg" media="(min-width: 500px)">
+          <img src="/wdd131/images-shop/img-ecommers/banner6.jpg" alt="Llama Peru" width="1000" height="600" loading="lazy">
+        </picture>
+        
+      </div>
+    </section>
+
+    <section class="sections" id="categories-section">
+      <h1>CATEGORIES</h1>
+      <div class="img-picture">
+        <img id="shirt" class="img1 img-sections" src="/wdd131/images-shop/img-ecommers/shirt.webp" alt="shirt-picture" loading="lazy">
+        <div>
+          <img id="jeans" class="img2 img-sections" src="/wdd131/images-shop/img-ecommers/trousers.webp" alt="" loading="lazy">
+        </div>
+      </div>
+    
+      <img id="seeAll" class="img3" src="/wdd131/images-shop/img-ecommers/allproduct.webp" alt="view all" loading="lazy">
+      <div class="product-category5"><h4>SEE ALL</h4></div>
+    
+      <div class="img-picture img-picures2">
+        <img id="jackets" class="img4 img-sections" src="/wdd131/images-shop/img-ecommers/jacket.webp" alt="jackets picture" loading="lazy">
+        <img id="sweter" class="img5 img-sections" src="/wdd131/images-shop/img-ecommers/sweters.webp" alt="sweter picture" loading="lazy">
+      </div>
+    </section>
+        <section class="best-seller" id="best-seller">
+      <h2>Best seller</h2>
+      <div class="seller-container"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="inf-footer">
+      ©️ <span class="currentyear"></span> Brandon M. Caldarella - Ireland🇮🇪
+    </p>
+    <p class="p-footer">
+      Last Modification : <span class="lastTimeModified"></span>
+    </p>
+  </footer>
+
+  <script src="/wdd131/scripts/time.js"></script>
+  <script src="/wdd131/scripts/nav.js" defer></script>
+  <script src="/wdd131/scripts/banner.js" defer></script>
+  <script src="/wdd131/scripts/shop.js" defer></script>
+  <script src="/wdd131/scripts/product-details.js" defer></script>
+  <script src="/wdd131/scripts/category.js"></script>
+  <script src="/wdd131/scripts/bestSeller.js"></script>
+</body>
+</html>

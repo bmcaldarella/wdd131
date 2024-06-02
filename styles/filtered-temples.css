@@ -1,0 +1,47 @@
+@media (min-width: 37.5rem) {
+    #menu{
+      display: none;
+    }
+    
+    .navigation a{
+      display: inline-flex;
+      font-size: 22px;
+      flex-direction: row;
+      justify-content: flex-end;
+      text-align: center;
+      float: inline-end;
+     
+
+      
+    }
+    .navigation{
+    
+      position: relative;
+      top: 35px;
+    }
+    
+    header{
+      display: flex;
+      justify-content: space-around;
+      
+    }
+    .title-temple{
+      align-self: flex-start;
+      position: relative;
+      right: 40px;      
+    }
+      
+       
+  }
+  
+  
+  
+    
+    
+  
+
+    
+
+    
+
+

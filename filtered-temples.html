@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - temples</title>
+    <meta name="description" content="W02 Assignment: temples - WDD 131 Dynamic Web Fundamentals">
+    <meta name="author" content="Brandon Caldarella">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/mobile-filtered-temples.css">
+   
+  </head>
+  <body>
+    <header>
+      <h1 class="title-temple">Temple Album</h1>
+      <button  aria-label="menu-mobile" id="menu"></button> <nav class="navigation">
+        <a href="#" id="home" aria-label="Show all temples" title="Home">Home</a>
+        <a href="#" id="old-temple" aria-label="Show the old temples" title="Show old temples">Old</a>
+        <a href="#" id="new-temple" aria-label="Show the new temples" title="Show new temples">New</a>
+        <a href="#" id="large-temple" aria-label="Show large temples" title="Show large temples">Large</a>
+        <a href="#" id="small-temple" aria-label="Show small temples" title="Show small temples">Small</a>
+    </nav>
+    </header>
+    <main>
+      <h2 class="main-title">Home</h2>
+      <div class="container">
+      </div>
+    </main>
+    <footer>
+      <p class="inf-footer">
+        ©️ <span id="currentyear"></span> Brandon M. Caldarella - Ireland🇮🇪
+      </p>
+      <p class="p-footer">
+        Last Modification : <span id="lastTimeModified"></span>
+      </p>
+
+     
+    </footer>
+     <script src="scripts/temples.js" defer></script>
+     <script src="scripts/filtered-temples.js" defer></script>
+  </body>
+</html>

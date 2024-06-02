@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="W05 Assignment: forms - WDD 131 Dynamic Web Fundamentals">
+    <meta name="author" content="Brandon Caldarella">
+ 
+
+
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    
+    <main>
+        <form id="product-review-form" action="review.html" method="get">
+            <div class="form-group">
+                <label for="product-name"><strong>Product Name</strong></label>
+                <select id="product-name" name="product-name" required>
+                    <option value="" disabled selected>Select a product...</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label><strong>Overall Rating</strong></label>
+                <div>
+                    <input type="radio" id="rating-1" name="rating" value="1" required>
+                    <label class="start"for="rating-1">⭐️</label>
+                    <input type="radio" id="rating-2" name="rating" value="2">
+                    <label for="rating-2">⭐️⭐️</label>
+                    <input type="radio" id="rating-3" name="rating" value="3">
+                    <label for="rating-3">⭐️⭐️⭐️</label>
+                    <input type="radio" id="rating-4" name="rating" value="4">
+                    <label for="rating-4">⭐️⭐️⭐️⭐️</label>
+                    <input type="radio" id="rating-5" name="rating" value="5">
+                    <label for="rating-5">⭐️⭐️⭐️⭐️⭐️</label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="install-date"><strong>Installation Date</strong></label>
+                <input type="date" id="install-date" name="install-date" required>
+            </div>
+            
+            <div class="form-group">
+                <label><strong>Useful Features</strong></label>
+                <div>
+                    <input type="checkbox" id="feature-1" name="features" value="feature-1">
+                    <label for="feature-1">Feature 1</label>
+                    <input type="checkbox" id="feature-2" name="features" value="feature-2">
+                    <label for="feature-2">Feature 2</label>
+                    <input type="checkbox" id="feature-3" name="features" value="feature-3">
+                    <label for="feature-3">Feature 3</label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="review-text"><strong>Written Review</strong></label>
+                <textarea id="review-text" name="review-text" rows="10" cols="50"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="username"><strong>Username</strong></label>
+                <input type="text" id="username" name="username">
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" value="Submit Review">
+            </div>
+        </form>
+    </main>
+    
+    <footer>
+        <p class="inf-footer">
+          ©️ <span id="currentyear"></span> Brandon M. Caldarella - Ireland🇮🇪
+        </p>
+        <p class="p-footer">
+          Last Modification : <span id="lastTimeModified"></span>
+        </p>
+  
+       
+      </footer>
+  
+    <script src="scripts/form.js" defer></script>
+</body>
+</html>
